@@ -1,9 +1,27 @@
 {
-  "name": "BlogWebAPI",
+  "name": "blog-web-api",
   "version": "0.0.1",
   "dependencies": {
+    "body-parser": "1.15.2",
     "compression": "1.6.2",
     "express": "4.14.0",
+    "method-override": "2.3.6",
     "morgan": "1.7.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "My implementation of blog REST API using MEAN stack",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-bogacz/BlogWebAPI.git"
+  },
+  "author": "j-bogacz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-bogacz/BlogWebAPI/issues"
+  },
+  "homepage": "https://github.com/j-bogacz/BlogWebAPI#readme"
 }
