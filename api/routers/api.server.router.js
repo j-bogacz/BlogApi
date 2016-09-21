@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var postsController = require('../controllers/posts.server.controller');
+var postsRouter = require('../routers/posts.server.router');
 
 module.exports = function (app) {
 
-  // lists all posts
-  router.get('/posts/', postsController.getAll);
+  // router for /post
+  router.use("/posts", postsRouter(app));
 
   return router;
 };  
