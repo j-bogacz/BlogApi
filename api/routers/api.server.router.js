@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var postsRouter = require('../routers/posts.server.router');
+var blogsRouter = require('../routers/blogs.server.router');
 
 module.exports = function (app) {
 
-  // router for /post
-  router.use("/posts", postsRouter(app));
+  // router for /blogs
+  router.use("/blogs", blogsRouter(app));
 
   return router;
 };  

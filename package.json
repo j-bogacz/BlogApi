@@ -1,5 +1,5 @@
 {
-  "name": "blog-web-api",
+  "name": "blogs-web-api",
   "version": "0.0.1",
   "dependencies": {
     "body-parser": "1.15.2",

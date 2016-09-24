@@ -20,7 +20,7 @@ module.exports = function () {
 
     app.use("/api", apiRouter(app));
     app.use('/*', function (req, res) {
-        res.json({ "message": "Blog WebAPI by j-bogacz" });
+        res.json({ "message": "Blogs WebAPI by j-bogacz" });
     });
 
     return app;
