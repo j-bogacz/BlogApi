@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var postsController = require('../controllers/posts.server.controller');
+var authenticator = require('../modules/authenticator.server.module');
 
 module.exports = function (app) {
 
@@ -8,7 +9,7 @@ module.exports = function (app) {
   router.get('/', postsController.getAll);
 
   // creates new posts
-  router.post('/', postsController.create);
+  router.post('/', authenticator.isUserAuthenticated, postsController.create);
 
   return router;
 };  
