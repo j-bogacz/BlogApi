@@ -1,5 +1,4 @@
 var controller = function () {
-
     // in-memory collection of blogs
     var blogs = [
         { name: "First blog", description: "Hi this is my first blog. At this stage of the project it is hardcoded." },
@@ -22,6 +21,6 @@ var controller = function () {
         'getAll': getAll,
         'create': create
     };
-} ();
+};
 
 module.exports = controller;  
