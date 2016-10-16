@@ -12,13 +12,16 @@ module.exports = function () {
   router.get('/', controller.getAll);
 
   // lists single blog
-  router.get('/:blog_id', authenticator.isUserAuthenticated, controller.get);
+  router.get('/:blog_id', controller.get);
 
   // creates new blog
   router.post('/', authenticator.isUserAuthenticated, controller.create);
 
   // updates blog
   router.put('/:blog_id', authenticator.isUserAuthenticated, controller.update);
+
+  // deletes blog
+  router.delete('/:blog_id', authenticator.isUserAuthenticated, controller.delete);
 
   return router;
 };  
