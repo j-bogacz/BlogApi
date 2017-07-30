@@ -23,16 +23,19 @@
     <Content Include="jsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Compile Include="api\controllers\blogs.controller.js" />
+    <Compile Include="api\models\blog.js" />
+    <Compile Include="api\modules\authenticator.module.js" />
+    <Compile Include="api\routers\api.router.js" />
+    <Compile Include="api\routers\blogs.router.js" />
+    <Compile Include="config\db.js" />
     <Compile Include="server.js" />
     <Compile Include="config\express.js" />
-    <Compile Include="api\controllers\blogs.server.controller.js" />
-    <Compile Include="api\modules\authenticator.server.module.js" />
-    <Compile Include="api\routers\api.server.router.js" />
-    <Compile Include="api\routers\blogs.server.router.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="api" />
     <Folder Include="api\controllers" />
+    <Folder Include="api\models\" />
     <Folder Include="api\modules" />
     <Folder Include="api\routers" />
     <Folder Include="config" />
